@@ -7,11 +7,18 @@ function foo()
 
 echo foo();
 
-
-echo '<br />';
-
-echo '<br />';
-
 echo '<br />';
 
 var_dump(foo());
+
+
+// Spla operator worl like the other languages ...[1,1,1,1,1,]
+// Argument we can name it and we dont care what orders is pass
+function sum($x, $y, ...$numbers)
+{
+    return $x + $y + array_sum($numbers);
+}
+echo sum(1, 2, 3, 6);
+
+// Sample of name argument
+// setcookie(name: 'foo', value: 'bar', httponly: true);

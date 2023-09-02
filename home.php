@@ -13,6 +13,14 @@
     ?>
     <h1>Home</h1>
     <p>Hello from the home page!!!</p>
+
+    <?php
+    include('variable_scope.php');
+    echo 'Scope Variable ' . $x;
+    echo '<br />';
+    foo();
+
+    ?>
 </body>
 
 </html>
